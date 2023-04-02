@@ -1,0 +1,107 @@
+@import '../variables/variables';
+@import '../mixin/mixin';
+
+h1{
+    @include titulos
+}
+
+ul{ 
+    display: flex;
+    flex-wrap: wrap;
+    color: $color-primario;
+    font-family: $tipografia;
+    justify-content: space-between;
+    margin: 50px;
+    background-color: lightgreen;
+    list-style-type: none;
+    padding: 40px;
+    border-radius: 25px;
+
+     li 
+     
+     a{
+        @include menu($color-primario, $color-secundario, 5px);
+     }
+
+    }
+
+
+    
+tr{
+    @include textos
+}    
+
+div{
+    position: relative;
+}
+
+table{
+    position: relative;
+    margin: auto;
+    margin-bottom: 30px
+}
+
+th{
+    @include menu($color-primario, $color-secundario, 5px);
+}
+
+tr{
+    @include menu ($color-secundario, $color-primario, 5px);
+}
+
+td{
+    padding: 30px;
+}
+
+button{
+    @include menu ($color-secundario, $color-primario, 5px);
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50PX;
+}
+#subtitulo{
+    @include titulos  }
+
+
+
+footer{
+    @include footer;
+
+}
+
+p{
+    @include textos;
+}
+
+
+form{
+    @include formulario;
+
+    label{
+        @include textos;
+    }
+    
+    input{
+        display: flex;
+        flex-wrap: column;
+        margin: auto;
+        padding: 5px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+        width: 500px;
+        border-radius: 15px;
+    }
+
+    textarea{
+        display: flex;
+        flex-wrap: column;
+        margin: auto;
+        padding: 5px;
+        width: 500px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+    }
+}
+

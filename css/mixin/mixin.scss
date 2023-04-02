@@ -1,0 +1,49 @@
+@mixin menu($color-fondo, $color-texto, $border-width){
+    background-color: $color-fondo;
+    color: $color-texto;
+    border: $border-width solid $color-texto;
+    padding: 20px;
+    border-radius: $border-width * 3;
+
+    
+}
+
+@mixin titulos{
+    font-family: $tipografia;
+    color: $color-primario;
+    font-size: 50px;
+    text-align: center;
+    padding: 50px;
+    font-weight: bold;
+
+}
+
+@mixin textos{
+    font-family: $tipografia;
+    text-align: center;
+    font-size: 25px;
+    padding: 50px;
+    margin: 50px;
+    font-weight: bold;
+
+}
+
+@mixin footer{
+    font-family: $tipografia;
+    text-align: center;
+    font-size: 30px;
+    background-color: $color-primario;
+    color: $color-secundario;
+    padding: 10px;
+    
+}
+
+@mixin formulario{
+    font-family: $tipografia;
+    text-align: center;
+    font-size: 20px;
+    background-color: $color-secundario;
+    color: $color-primario;
+    padding: 10px;
+    margin-bottom: 10px;
+}
